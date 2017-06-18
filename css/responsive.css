@@ -1,0 +1,103 @@
+/* ----------------------------------
+	Default Styles
+---------------------------------- */
+
+/* COLORS 
+
+1. grey - #cfcfcf 
+1. blue - #5ba6cc 
+1. green - #87a97c 
+1. orange - #e5a66e 
+1. magenta - #c380a3 
+
+*/
+
+/* ----------------------------------
+	Meida Query for Laptop 
+---------------------------------- */
+
+/* Media Query : Breakpoint 1 */ 
+@media all and (max-width: 1440px) {
+
+	.skills 			{ padding: 0 80px; }
+	.skills > ul > li 	{ width: 50%; }
+}
+
+/* ----------------------------------
+	Meida Query for Tablet 
+---------------------------------- */
+
+/* Media Query : Breakpoint 2 */ 
+@media all and (max-width: 1024px) {
+
+	.home .col			{  width: 33%; }
+
+	.works .filters ul 		{ border-bottom: 0;}
+	.works .filters ul li 	{ padding: 10px 20px; margin-left: 10px; margin-top: 10px; border-radius: 7px; }
+
+
+}
+
+/* ----------------------------------
+	Meida Query for Tablet 
+---------------------------------- */
+
+/* Media Query : Breakpoint 2 */ 
+@media all and (max-width: 992px) {
+
+	.home h1 			{ font-size: 28px; }
+	.home h3 			{ font-size: 16px; } 
+	.lab  				{ transform: scale(0.9); }
+	
+	.skills > ul > li 	{ width: 50%; }
+	.works .project		{ width: 340px; }
+	.skills 			{ padding: 0 10px; }
+	
+
+	.skills .webdesign::before 		{ background-color: #5ba6cc; }
+	.skills .webdesign li::before 	{ background-color: #5ba6cc; }
+
+	.skills .webapp::before 		{ background-color: #87a97c; }
+	.skills .webapp li::before 		{ background-color: #87a97c; }
+
+	.skills .webanim::before 		{ background-color: #e5a66e; }
+	.skills .webanim li::before 	{ background-color: #e5a66e; }
+
+	.skills .gamedev::before 		{ background-color: #c380a3; }
+	.skills .gamedev li::before 	{ background-color: #c380a3; }
+	
+}
+
+/* ----------------------------------
+	Meida Query for Mobile 
+---------------------------------- */
+
+/* Media Query : Breakpoint 3 */ 
+@media all and (max-width: 767px) {
+
+	.home .col 				{ width: 100%; border: none; }
+	.home .col:first-child	{ border: none; }	
+
+	.lab 					{ display: none; }
+	.home h3::after 		{ display: none; }
+	/*.home .gear				{ display: none; } */
+
+	.header .me 			{ z-index: 100; }
+
+	.skills > ul > li 		{ width: 100%; }
+	.skills ul li 			{ padding: 30px 0 30px 30px; }
+	.skills ul li::after 	{ width: 20px; left: 15px; }
+
+	.works .project			{ width: 100%; margin: 10px 0; }
+
+	.about .col 			{ width: 100%; }
+
+	.contact 				{ right: 0; }
+	.contact input 			{ background-size: cover; }
+
+
+	.footer .quote p 			{ font-size: 24px; color: #cfcfcf; line-height: 30px; }
+	.footer .quote p span 		{ font-size: 30px; color: #efefef; }
+	.footer .quote > span 		{ font-size: 14px; color: #afafaf; display: block; text-align: right; }
+
+}

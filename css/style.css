@@ -1,0 +1,308 @@
+/* ----------------------------------
+	Default Styles
+---------------------------------- */
+
+/* COLORS 
+
+1. grey - #cfcfcf 
+1. blue - #5ba6cc 
+1. green - #87a97c 
+1. orange - #e5a66e 
+1. magenta - #c380a3 
+
+*/
+
+
+body 					{ font-family: 'Dosis', sans-serif; /* font-family: 'Roboto Condensed', verdana; */ font-size: 16px; line-height: 18px; color: #777879; }
+a, a:link, a:visited 	{ color: #878889; }
+a:hover 				{ color: #467fc5; }
+.clearfix				{ clear: both; }
+
+h1		 				{ font-size: 24px; font-weight: 600; line-height: 60px; color: #467fc5; margin-top: 0px; text-transform: uppercase; }
+h2 						{ font-size: 20px; line-height: 40px; }
+p						{ font-size: 16px; line-height: 20px; }
+
+.nsgrey 				{ color: #cfcfcf; }
+.nsblue 				{ color: #5ba6cc; }
+.nsgreen 				{ color: #87a97c; }
+.nsred 					{ color: #e5a66e; }
+.nspink 				{ color: #c380a3; }
+.inner-shadow 			{ background-color: #efefef; -webkit-box-shadow: inset 0px 0px 10px -1px rgba(0,0,0,0.20); -moz-box-shadow: inset 0px 0px 10px -1px rgba(0,0,0,0.20); box-shadow: inset 0px 0px 10px -1px rgba(0,0,0,0.20); }
+
+.disabled 				{ pointer-events: none; }
+
+.nsbtn					{ display: inline-block; width: auto; font-size: 18px; color: #fff; background-color: #cfcfcf; padding: 7px 10px; text-align: left; margin: 20px; text-transform: uppercase; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+.nsbtn:hover			{ background: #111; cursor: pointer; color: #fff; }
+.nsbtn-hover			{ background: #111; cursor: pointer; color: #fff; }
+
+/* ----------------------------------
+	Custom Header Styles
+---------------------------------- */
+
+.wrapper 				{  }
+.loader 				{ width: 50px; height: 50px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);	background: url('../images/loader.gif'); opacity: 0.3; }
+.container 				{ margin: 0 auto; width: 100%; height: 100%; background: #FFF; padding: 0 20px; max-width: 1200px; text-align: center; }
+.overlay 				{ position: fixed; width: 100%; height: 100%; background: rgba(0,0,0,0.5); top: 0; left: 0; z-index: 99; display: none; }
+.page					{ display: none; }
+
+#page1 					{ padding: 20px 0 0 0; /* height: 100vh; */}
+#page2 					{ padding: 60px 0 60px 0; text-align: center; }
+#page2 .container 		{ max-width: 1600px; }
+#page3, #page4 			{ padding: 60px 0; text-align: center; }
+#page3 .container 		{ max-width: 1600px; }
+.title 					{ position: relative; border-top: #cfcfcf 1px dotted; }
+.title h1  				{ display: inline-block; padding: 0 10px; margin: 0 auto; background-color: #fff; position: relative; top: -30px; }
+
+
+/* ----------------------------------
+	Custom Menu Styles
+---------------------------------- */ 
+
+.header					{ text-align: center; }
+.header .logo img 		{ width: 100px; margin-top: 20px; }
+
+.menu 					{ display: block; width: 100%; text-align: center; }
+.menu .links 			{ text-align: center; padding: 10px 20px; margin-top: -30px; } 
+
+.menu .fb,
+.menu .ln 				{ display: inline-block; vertical-align: middle; width: 40px; height: 40px; background: url('../images/social.png') no-repeat; cursor: pointer; transition: all 0.5s; }
+.menu .fb				{ background-position: 0px 0px; }
+.menu .ln				{ background-position: -40px 0px; }
+.menu .fb:hover			{ background-position: -0px -40px; }
+.menu .ln:hover			{ background-position: -40px -40px; }
+
+.menu .email			{ display: inline-block; vertical-align: middle; margin-left: 5px; transform: scale(1); }
+.menu .email:hover 		{ transform: scale(1.1); /* animation: gearRotate 1s linear infinite; */ }
+
+.menu .nav 						{ margin: 10px 0px; display: inline-block; }
+.menu .nav li 					{ float: left; margin-left: 30px; text-align: center;}
+.menu .nav li:first-child 		{ margin-left: 0px;}
+.menu .nav li a 				{ display: inline-block; width: 40px; height: 40px; background: url('../images/nav-icons.png'); background-position: 0 0; background-repeat: no-repeat; }
+
+.menu .nav .nav-skills			{ background-position: -40px 0px; }
+.menu .nav .nav-works			{ background-position: -80px 0px; }
+.menu .nav .nav-contact			{ background-position: -120px 0px; }
+
+.menu .nav .nav-about:hover		{ background-position: 0px -40px; }
+.menu .nav .nav-skills:hover	{ background-position: -40px -40px; }
+.menu .nav .nav-works:hover		{ background-position: -80px -40px; }
+.menu .nav .nav-contact:hover	{ background-position: -120px -40px; }
+
+
+
+/* ----------------------------------
+	Custom home Styles
+---------------------------------- */
+
+.home 					{ text-align: center; }
+/* .home .logo 			{ position: fixed;  } */
+.home .whatido 			{ text-align: center; padding: 40px 0 20px 0; }
+.home .col				{ display: inline-block; width: 30%; border-right: #efefef 1px solid; transition: all 0.5s; position: relative; }
+.home .col:first-child	{ border-left: #efefef 1px solid; }
+.home h1 				{ font-size: 36px;  }
+.home .col:hover 		{ cursor: pointer; /* opacity: 0.5;  */ }
+.home h3 				{ font-size: 18px; text-transform: uppercase; color: #cfcfcf; }
+.home h3::after 		{ content: ""; position: absolute; left: 50%; transform: translateX(-50%); top: 140px; width: 10px; height: 30px; background: #cfcfcf; }
+
+.home .gear				{ width: 50px; height: 50px; display: inline-block; margin-top: 20px;  }
+.home .gear1 			{ background: url('../images/gear1.png') no-repeat; animation: gearRotate 2.2s linear infinite;}	
+.home .gear2 			{ background: url('../images/gear2.png') no-repeat; animation: gearRotate 2.6s linear infinite;}	
+.home .gear3 			{ background: url('../images/gear3.png') no-repeat; animation: gearRotate 2.0s linear infinite;}	
+.home .gear4 			{ background: url('../images/gear4.png') no-repeat; animation: gearRotate 2s linear infinite;}	
+.home .gear-fast 		{ animation-duration: 0.4s; }
+
+
+/* ----------------------------------
+	Custom Lab Styles
+---------------------------------- */
+
+.laboratory 		{  }
+.lab                { width: 760px; height: 360px; overflow: hidden; margin: 0 auto; position: relative; transform: scale(1); transform-origin: center top; border-top:  #cfcfcf 10px solid; } 
+.lab .equipments    { position: absolute; top: 0; left: 0; width: 100%; }
+.lab .meter         { position: absolute; width: 2px; height: 10px; background-color: black; transform-origin: bottom center; transform: rotate(-45deg); animation: rotateMeter 2.5s linear infinite; }
+.lab .meter1 		{ top: 125px; left: 364px; }
+.lab .meter2 		{ top: 125px; left: 504px; }
+.lab .meter3 		{ top: 125px; left: 645px; }
+.lab .meter4 		{ top: 125px; left: 784px; }
+
+.lab .bits          { position: absolute; top: 250px; left: 56px; width: 131px; height: 86px; background: url('../images/bits.png'); background-position: 0 0; animation: bitrate 5s linear infinite; }
+
+.lab .fill1         { position: absolute; top: 180px; left: 130px; }
+.lab .fill2         { position: absolute; top: 260px; left: 350px; }
+.lab .fill3         { position: absolute; top: 280px; left: 500px; }
+.lab .fill4         { position: absolute; top: 270px; left: 630px; }
+.lab .fill5         { position: absolute; top: 300px; left: 760px; }
+
+.lab .fill1 #wave1  { fill: #333; animation: waveAction 1.5s linear infinite; }
+.lab .fill2 #wave2  { fill: #5ba6cc; animation: waveAction 1s linear infinite; }
+.lab .fill3 #wave3  { fill: #87a97c; animation: waveAction 1s linear infinite; }
+.lab .fill4 #wave4  { fill: #e5a66e; animation: waveAction 1s linear infinite; }
+.lab .fill5 #wave5  { fill: #c380a3; animation: waveAction 1s linear infinite; }
+
+/* ----------------------------------
+	Custom about Styles
+---------------------------------- */
+
+.about 					{ }
+
+.about .intro 			{ max-width: 980px; margin: 0 auto; }
+.about .intro p 		{ margin-top: 15px; line-height: 28px; font-size: 20px; }
+.about .intro p span 		{ color: #467fc5; }
+.about .close			{ position: absolute; top: 10px; right: 10px; cursor: pointer; display: none;}
+.about .cert			{ margin-top: -20px; }
+.about .cert a			{ display: inline-block; text-align: right; transform: rotate(0deg); margin-right: 180px; margin-top: -50px;}
+.about .cert a:hover	{ transform: rotate(65deg); }
+
+.about .life 			{   }
+.about .life h1		 	{ color: #467fc5; line-height: 30px; font-size: 36px; margin-top: 70px; position: relative; }
+.about .life h1:before 	{ content: ""; width: 100%; height: 40px; position: absolute; left: 0; top: -50px; background: url('../images/arrow-down.png') no-repeat center; }
+.about .life h2		 	{ font-size: 24px; line-height: 36px; margin-top: 10px; color: #87a97c; font-weight: bold; }
+.about .life p 			{ font-size: 16px; line-height: 18px; /*margin-top: 10px;*/ }
+
+.about .life p i 		{ margin: 0 3px; color: #467fc5;}
+
+
+
+
+/* ----------------------------------
+	Custom work Styles
+---------------------------------- */
+
+/*.workmenu 				{ display: none; position: absolute; top: 0px; text-align: center; padding: 20px 0; width: 100%; background-color: #cfcfcf;  } */
+
+.works 					{ text-align: center; position: relative;  }
+.works .filters 		{ text-align: center; margin-bottom: 40px; width: 100%; } 
+.works .filters ul 		{ display: inline-block; border-bottom: 1px solid #aaa; padding-right: 10px; text-align: center; }
+.works .filters ul li 	{ cursor: pointer; display: inline-block; background-color: #efefef; padding: 10px 20px; margin-left: 10px; border-radius: 7px 7px 0 0; }
+
+.works .filters ul li:hover,
+.works .filters ul li.active 	{ background-color: #aaa; color: #fff; } 
+
+.works .projects		{ text-align: center; margin: 0 0 30px 0; cursor: pointer; }
+
+.works .project			{ display:inline-block; text-align: left; width: 400px; margin: 0 10px 20px 10px; border: #cfcfcf 1px solid; border-bottom: #cfcfcf 10px solid; }
+
+.works .web-design 		{ border-color: #5ba6cc; }
+.works .web-app 		{ border-color: #87a97c; }
+.works .web-anim 		{ border-color: #e5a66e; }
+.works .game-dev 		{ border-color: #c380a3; }	
+
+.works .project:hover 	{ cursor: pointer; }
+.works .project h2 		{ font-size: 24px; line-height: 36px; text-align: left; margin: 10px 0 0 20px; }
+.works .project p 		{ font-size: 16px; line-height: 24px; text-align: left; margin: 0px 0 0px 20px; }
+.works .project img 	{ width: 100%; }
+
+
+/* ----------------------------------
+	Custom skill Styles
+---------------------------------- */
+
+.skills 				{ text-align: left; margin: 20px 0; padding: 0 60px; }
+
+.skills ul li 			{ list-style: none; position: relative; padding: 30px 0 30px 40px; border-left: #666 5px solid; transition: all 0.5s; }
+
+.skills .skill 			{ margin: -20px 0 0 15px; background: #fff; }
+.skills .skill:hover 	{ cursor: pointer; }
+.skills .skill span 	{ font-size: 20px; text-transform: uppercase; color: #999; }
+
+.skills .skill .point 	{ position: absolute; left: -12px; top: 10px; font-size: 18px; letter-spacing: 0.75px; text-align: center; color: #fff; }
+
+.skills ul li::before 	{ cursor:pointer; transition: all 0.5s; content: ""; margin: 0 20px 0px 0; width: 40px; height: 40px; border: #666 5px solid; border-radius: 50%; background-color: #fff; position: absolute; left: -23px; top: 0px; }
+
+
+.skills .webdesign:hover::before 		{ background-color: #5ba6cc; }
+.skills .webdesign li:hover::before 	{ background-color: #5ba6cc; }
+
+.skills .webapp:hover::before 			{ background-color: #87a97c; }
+.skills .webapp li:hover::before 		{ background-color: #87a97c; }
+
+.skills .webanim:hover::before 			{ background-color: #e5a66e; }
+.skills .webanim li:hover::before 		{ background-color: #e5a66e; }
+
+.skills .gamedev:hover::before 			{ background-color: #c380a3; }
+.skills .gamedev li:hover::before 		{ background-color: #c380a3; }
+
+
+.skills .webdesign,
+.skills .webdesign::before,
+.skills .webdesign::after,
+.skills .webdesign li,
+.skills .webdesign li::before,
+.skills .webdesign li::after  		{ border-color: #5ba6cc; } 
+
+
+.skills .webapp,
+.skills .webapp::before,
+.skills .webapp::after,
+.skills .webapp li,
+.skills .webapp li::before,
+.skills .webapp li::after  			{ border-color: #87a97c; } 
+
+
+.skills .webanim,
+.skills .webanim::before,
+.skills .webanim::after,
+.skills .webanim li,
+.skills .webanim li::before,
+.skills .webanim li::after  		{ border-color: #e5a66e; } 
+
+
+.skills .gamedev,
+.skills .gamedev::before,
+.skills .gamedev::after,
+.skills .gamedev li,
+.skills .gamedev li::before,
+.skills .gamedev li::after  		{ border-color: #c380a3; } 
+
+
+.skills ul li::after 			{ content: ""; position: absolute; border-top: #666 5px solid; top: 15px; width: 30px; left: 15px; }
+.skill+ul 						{ padding-top: 40px; padding-left: 20px; }
+.skills > ul > li 				{ width: 25%; float: left; margin-bottom: 30px; }
+.skills > ul > li > .skill 		{ font-weight: bold; }
+
+
+/* ----------------------------------
+	Custom Contact Styles
+---------------------------------- */
+
+.contact				{ width: 100%; padding: 20px 0; max-width: 580px; margin: 0 auto; text-align: center; }
+.contact form 			{ margin: 0 auto 20px 0; }
+.contact h1		 		{ font-size: 24px; font-weight: 700; line-height: 30px; color: #467fc5; margin: 20px 0; }
+.contact h2		 		{ display:none; font-size: 16px; font-weight: 400; line-height: 30px; color: #749d58; margin: 20px; }
+.contact input 			{ border: #aaa 1px solid; width: 90%; height: 50px; margin: 10px; color: #fff; padding: 7px 20px; background: url('../images/footer-bg.jpg') no-repeat; background-size: 120%; border-radius: 7px; -webkit-border-radius: 7px; -moz-border-radius: 7px; font-size: 20px; font-weight: 700; line-height: 24px; font-family: inherit; }
+.contact textarea 		{ border: #aaa 1px solid; width: 90%; height: 150px; margin: 10px; color: #fff; padding: 20px 20px;background: url('../images/footer-bg.jpg') no-repeat; background-size: cover; scrollbar-base-color: #fff; font-size: 20px; font-weight: 700; line-height: 24px; font-family: inherit; border-radius: 7px; -webkit-border-radius: 7px; -moz-border-radius: 7px; }
+
+.contact input:focus, 
+.contact textarea:focus  { border-color: #467fc5; background-position: -30px; }
+
+.contact input[type='submit']			{ width: 20%; min-width: 100px; background-image: none; color: #467fc5; cursor: pointer; font-size: 20px; font-weight: 700; line-height: 24px; font-family: inherit; }
+.contact input[type='submit']:hover 	{ color: #fff; background-color: #467fc5; }	
+
+::-webkit-input-placeholder 			{ color: #eeeeee; }
+:-moz-placeholder 						{ color: #eeeeee; }
+::-moz-placeholder 						{ color: #eeeeee; }
+:-ms-input-placeholder 					{ color: #eeeeee; }
+
+.contact .fclose		{ position: absolute; top: 10px; right: 10px; cursor: pointer; }
+.contact .nsmsg 		{ background-color: #00aa00; margin: 0 20px; padding: 10px; color: #fff; display: none;  }
+
+
+/* ----------------------------------
+	Custom Footer Styles
+---------------------------------- */
+
+.footer .title 			{ margin-top: 40px; }
+
+.nsarticle h1 			{ text-align: left; font-size: 36px; }
+.nsarticle h2 			{ text-align: left; font-size: 24px; padding-bottom: 30px; border-bottom: #aaa 1px solid; }
+.nsarticle iframe 		{ width: 100%; }
+
+.nsfooter				{ width: 100%; height: 160px; border:1px solid; background: url('../images/footer-bg.jpg') no-repeat; background-position: center; text-align: center; }
+
+.nscopyright			{ width: 100%; height: 60px; text-align: center; margin-top: 30px; }
+.nscopyright span		{ font-size: 10px; line-height: 25px;}
+
+/* Media Query : Breakpoint 1 */ 
+@media screen and (max-width: 380px) {
+	.nscopyright span 	{ font-size: 6px !important; line-height: 20px; }
+}

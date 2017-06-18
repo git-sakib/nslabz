@@ -1,0 +1,39 @@
+@keyframes hanging{
+  0%    { transform: rotate(0deg); opacity: 1;}
+  25%   { transform: rotate(20deg); opacity: 1;}
+  50%   { transform: rotate(0deg); opacity: 1;}
+  75%   { transform: rotate(-20deg); opacity: 1;}
+  100%  { transform: rotate(0deg); opacity: 1;} 
+}
+
+
+@keyframes pulse{
+  0%    { opacity: 1; transform: scale(1); }
+  5%    { opacity: 1; transform: scale(1.1); }
+  10%   { opacity: 1; transform: scale(1); }
+  100%  { opacity: 1; transform: scale(1); }
+}
+
+
+@keyframes waveAction {
+    0% {transform: translate(-150px, 0); } 
+    100% {transform: translate(0px, 0); } 
+}
+
+@keyframes bitrate {
+    0% {background-position: 0 0; } 
+    100% {background-position: -262px 0; } 
+}
+
+@keyframes rotateMeter {
+    0% { transform: rotate(-45deg); } 
+    25% { transform: rotate(0deg); } 
+    50% { transform: rotate(45deg); } 
+    75% { transform: rotate(0deg); } 
+    100% { transform: rotate(-45deg); } 
+}
+
+@keyframes gearRotate {
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(360deg); } 
+}
