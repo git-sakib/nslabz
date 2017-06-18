@@ -1,0 +1,60 @@
+<!doctype html> 
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>বর্ন দৌড় - BETA VERSION</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src = "phaser/phaser.2.2.2.min.js"></script>
+    <!--script type="text/javascript" src = "js/game.js"></script-->
+    <script type="text/javascript" src = "js/game.min.js"></script>
+    <script type="text/javascript" src = "js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src = "//connect.facebook.net/en_US/sdk.js"></script>
+</head>
+<body>
+
+    <div id="fb-root"></div>
+
+    <div id="user" class="user-block">
+        <div><img src="images/nopic.png" /></div><div><span>welcome</span><p>Player</p></div>
+
+        <a href="http://www.nslabz.com" target="_blank"><img src="images/titles/logo-white.png"></a>
+
+        <div class="msg">* game scoring system is disabled temporarily until the full version comes out *</div>
+        <!-- <button id="scoreBtn" class="btn">Rank</button>      
+        <button id="statBtn" class="btn">Stats</button>
+        <button id="infoBtn" class="btn">Info</button> -->
+
+
+<!--         <div id="stats" class="stat-board"><div class="content"></div><button id="closeBtn1" class="btn">x</button></div>
+        <div id="scores" class="stat-board"><div class="content"></div><button id="closeBtn2" class="btn">x</button></div> -->
+    </div>
+
+    <div id="gameCanvas" class="container">
+    <script type="text/javascript">
+
+        //var GAME_WIDTH = 960;
+        //var GAME_HEIGHT = 640;
+
+        var game = new Phaser.Game(GAME_WIDTH,GAME_HEIGHT,Phaser.CANVAS,"gameCanvas");
+
+        game.state.add("GameBoot", gameBoot);
+        game.state.add("GameLoader", gameLoader);
+        game.state.add("GameTitle", gameTitle);
+        game.state.add("GameMenu", gameMenu);
+        game.state.add("GameMain", gameMain);
+        game.state.add("GameOver", gameOver);
+        game.state.start("GameBoot");
+
+        //Ignore All Errors
+        // window.onerror = function(){
+        //     return true;
+        // }        
+
+    </script>
+    </div>
+
+<!-- <script type="text/javascript" src="js/fb.js"></script> -->
+<script type="text/javascript" src="js/fb.min.js"></script>  
+</body>
+</html>
