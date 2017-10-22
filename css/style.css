@@ -29,6 +29,17 @@ p						{ font-size: 16px; line-height: 20px; }
 .nspink 				{ color: #c380a3; }
 .inner-shadow 			{ background-color: #efefef; -webkit-box-shadow: inset 0px 0px 10px -1px rgba(0,0,0,0.20); -moz-box-shadow: inset 0px 0px 10px -1px rgba(0,0,0,0.20); box-shadow: inset 0px 0px 10px -1px rgba(0,0,0,0.20); }
 
+.badge					{ padding: 5px 10px; border-radius: 5px; background-color: #000; color: #fff; opacity: 0.5; transition: opacity 0.7s; font-size: 15px; } 
+.badge:hover 			{ opacity: 1; }
+.badge.blue 			{ background-color: #0678be; }
+.badge.red 				{ background-color: #AA0000; }
+.badge.green 			{ background-color: #7aba20; }
+.badge.orange 			{ background-color: #bf3e11; }
+.badge.yellow 			{ background-color: #d18f4f; }
+.badge.pink 			{ background-color: #c6538c; }
+.badge.violet 			{ background-color: #7952b3; }
+
+
 .disabled 				{ pointer-events: none; }
 
 .nsbtn					{ display: inline-block; width: auto; font-size: 18px; color: #fff; background-color: #cfcfcf; padding: 7px 10px; text-align: left; margin: 20px; text-transform: uppercase; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
