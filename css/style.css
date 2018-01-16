@@ -138,10 +138,10 @@ p						{ font-size: 16px; line-height: 20px; }
 
 .lab .bits          { position: absolute; top: 250px; left: 56px; width: 131px; height: 86px; background: url('../images/bits.png'); background-position: 0 0; animation: bitrate 5s linear infinite; }
 
-.lab .fill1         { position: absolute; top: 180px; left: 130px; }
+.lab .fill1         { position: absolute; top: 170px; left: 130px; }
 .lab .fill2         { position: absolute; top: 260px; left: 350px; }
-.lab .fill3         { position: absolute; top: 280px; left: 500px; }
-.lab .fill4         { position: absolute; top: 270px; left: 630px; }
+.lab .fill3         { position: absolute; top: 270px; left: 500px; }
+.lab .fill4         { position: absolute; top: 260px; left: 630px; }
 .lab .fill5         { position: absolute; top: 300px; left: 760px; }
 
 .lab .fill1 #wave1  { fill: #333; animation: waveAction 1.5s linear infinite; }
